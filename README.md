@@ -93,7 +93,7 @@ func hello(ctx *jrs.Context) (interface, int, string) {
         }
     },
     {
-        "ID": 2,
+        "id": 2,
         "code": -32602,
         "message": "size不能等于0"
     }
