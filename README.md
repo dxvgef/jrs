@@ -18,8 +18,8 @@ import (
 func main() {
     // 获得一个jrs实例，指定唯一入口路径
     svr := jrs.New("/rpc")
-    // 设置映射
-    svr.SetFunc("user.add", hello)
+    // 设置调用的method名及映射的函数
+    svr.SetFunc("hello", hello)
     // 启动HTTP服务
     http.ListenAndServe(":10080", svr)
 }
